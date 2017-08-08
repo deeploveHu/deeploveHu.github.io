@@ -9,7 +9,7 @@
 title: 邵先杰的个人博客
 brief-intro: 软件&硬件工程师
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://bloglink.github.io" # the base hostname & protocol for your site
+url: "https://deeploveHu.github.io" # the base hostname & protocol for your site
 
 permalink: /:year/:month/:day/:title/
 
