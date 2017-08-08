@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: 赵楠林的个人博客
+title: 邵先杰的个人博客
 brief-intro: 软件&硬件工程师
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://bloglink.github.io" # the base hostname & protocol for your site
@@ -14,8 +14,8 @@ url: "https://bloglink.github.io" # the base hostname & protocol for your site
 permalink: /:year/:month/:day/:title/
 
 # other links
-github_username:  bloglink
-email: zzznanlin@126.com
+github_username:  deeploveHu
+email: jeremysxj@163.com
 
 description_footer: 本站记录我学习的点点滴滴！
 
