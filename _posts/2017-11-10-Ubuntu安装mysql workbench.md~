@@ -22,29 +22,33 @@ tags:  经验
 ## MySQL Workbench 相关文件
 
 MySQL Workbench 使用教学可见: [Visual Database Creation with MySQL Workbench](https://code.tutsplus.com/articles/visual-database-creation-with-mysql-workbench--net-10975)
+
+
+
 MySQL Workbench 下载: [MySQL Workbench](https://dev.mysql.com/downloads/workbench/) # 下述进行前, 请先于此处下载 MySQLWorkbench() 的 deb 安装档
 
 ### 安装
 
 使用 dpkg 安装 `mysql-workbench-oss_5.2.18-1ubu910_amd64.deb`, 如下述命令
 
-	$ dpkg -i mysql-workbench-oss_5.2.18-1ubu910_amd64.deb # 会出现下述错误讯息
-	dpkg：因相依问题，不能设定 mysql-workbench-oss：
- 	mysql-workbench-oss 相依于 libmysqlclient15off (>= 5.0.27-1)﹔然而：
-  	未曾安装套件 `libmysqlclient15off'。
- 	mysql-workbench-oss 相依于 libzip1﹔然而：
-  	未曾安装套件 `libzip1'。
- 	mysql-workbench-oss 相依于 python-paramiko﹔然而：
-  	未曾安装套件 `python-paramiko'。
- 	mysql-workbench-oss 相依于 python-pexpect﹔然而：
-  	未曾安装套件 `python-pexpect'。
- 	mysql-workbench-oss 相依于 mysql-client﹔然而：
-  	未曾安装套件 `mysql-client'。
-	dpkg：在处理 mysql-workbench-oss (--install) 时发生错误：
- 	相依问题 - 保留为未设定
-	正在进行 desktop-file-utils 的触发程式 ...
-	在处理时有错误发生：
- 	mysql-workbench-oss
+		$ dpkg -i mysql-workbench-oss_5.2.18-1ubu910_amd64.deb # 会出现下述错误讯息
+		dpkg：因相依问题，不能设定 mysql-workbench-oss：
+ 		mysql-workbench-oss 相依于 libmysqlclient15off (>= 5.0.27-1)﹔然而：
+  		未曾安装套件 `libmysqlclient15off'。
+ 		mysql-workbench-oss 相依于 libzip1﹔然而：
+  		未曾安装套件 `libzip1'。
+ 		mysql-workbench-oss 相依于 python-paramiko﹔然而：
+  		未曾安装套件 `python-paramiko'。
+ 		mysql-workbench-oss 相依于 python-pexpect﹔然而：
+  		未曾安装套件 `python-pexpect'。
+ 		mysql-workbench-oss 相依于 mysql-client﹔然而：
+  		未曾安装套件 `mysql-client'。
+		dpkg：在处理 mysql-workbench-oss (--install) 时发生错误：
+ 		相依问题 - 保留为未设定
+		正在进行 desktop-file-utils 的触发程式 ...
+		在处理时有错误发生：
+ 		mysql-workbench-oss
+
 再来补相关 Package, 靠 aptitude 来补, 如下述指令:
 
 `$ sudo apt-get install aptitude` 

@@ -22,6 +22,12 @@ tags:  经验
 ## MySQL Workbench 相关文件
 
 MySQL Workbench 使用教学可见: [Visual Database Creation with MySQL Workbench](https://code.tutsplus.com/articles/visual-database-creation-with-mysql-workbench--net-10975)
+
+
+
+
+
+
 MySQL Workbench 下载: [MySQL Workbench](https://dev.mysql.com/downloads/workbench/) # 下述进行前, 请先于此处下载 MySQLWorkbench() 的 deb 安装档
 
 ### 安装
