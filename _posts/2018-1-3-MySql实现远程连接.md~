@@ -18,7 +18,7 @@ tags:  Mysql
 
    格式：grant 权限 on 数据库名.表名 to 用户@登录主机 identified by "用户密码";
 
-           grant select,update,insert,delete on *.* to root@192.168.1.12 identified by "root";
+           grant select,update,insert,delete on *.* to 'root'@'192.168.1.12' identified by 'mypassword' with grant option;
 
    原先数据表结构
 
@@ -60,19 +60,21 @@ mysql> select host,user,password from user;
 
    将host字段的值改为%就表示在任何客户端机器上能以root用户登录到mysql服务器，建议在开发时设为%。 
 
-   update user set host = ’%’ where user = ’root’;
+   update user set host = '%' where user = 'root';
 
    将权限改为ALL PRIVILEGES
 
-mysql> use mysql;
+		mysql> use mysql;
 
-Database changed
+		Database changed
 
-mysql> grant all privileges  on *.* to root@'%' identified by "root";
+		mysql> grant all privileges  on *.* to 'root'@'%' identified by 'mypassword' with grant option;
 
-Query OK, 0 rows affected (0.00 sec)
+		Query OK, 0 rows affected (0.00 sec)
 
-mysql> select host,user,password from user;
+		mysql> flush privileges;
+
+		mysql> select host,user,password from user;
 
 		+--------------+------+-------------------------------------------+
 		| host         | user | password                                  |
